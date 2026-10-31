@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Pablo Martínez | Backend & Software Engineer</title>
+  <meta name="description" content="Portafolio profesional de Juan Pablo Martínez Reyes (Juan392). Especialista en Backend con Java, Spring Boot, C# .NET y automatización en Python.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              500: '#10b981',
+              600: '#059669',
+            },
+            accent: {
+              cyan: '#06b6d4',
+              purple: '#8b5cf6',
+              amber: '#f59e0b',
+              rose: '#f43f5e'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .glow-cyan {
+      box-shadow: 0 0 40px -10px rgba(6, 182, 212, 0.25);
+    }
+    .glow-purple {
+      box-shadow: 0 0 40px -10px rgba(139, 92, 246, 0.25);
+    }
+    .glow-rose {
+      box-shadow: 0 0 40px -10px rgba(244, 63, 94, 0.25);
+    }
+    .grid-bg {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200 min-h-screen">
+
+  <!-- Ambient Light Effects -->
+  <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed top-1/3 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-mono font-bold text-slate-950 group-hover:scale-105 transition-transform">
+          JP
+        </span>
+        <span class="font-mono text-sm tracking-wider font-semibold text-slate-200 group-hover:text-cyan-400 transition-colors">
+          juan392<span class="text-cyan-400">.dev</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="#destacado" class="hover:text-cyan-400 transition-colors">ChurnInsight</a>
+        <a href="#neoia" class="hover:text-purple-400 transition-colors flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+          NeoIA (C# & IA)
+        </a>
+        <a href="#automatizaciones" class="hover:text-cyan-400 transition-colors">Automatizaciones</a>
+        <a href="#proyectos" class="hover:text-cyan-400 transition-colors">APIs Java</a>
+        <a href="#habilidades" class="hover:text-cyan-400 transition-colors">Stack</a>
+        <a href="#contacto" class="hover:text-cyan-400 transition-colors">Contacto</a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/Juan392" target="_blank" rel="noopener noreferrer"
+           class="p-2 rounded-lg border border-slate-800 bg-slate-900/60 text-slate-300 hover:text-white hover:border-slate-700 transition-all flex items-center gap-2 text-sm">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span class="hidden sm:inline font-mono">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/juan-pablo-martinez-reyes-3aa977315/" target="_blank" rel="noopener noreferrer"
+           class="px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-semibold text-sm hover:brightness-110 transition-all shadow-sm shadow-cyan-500/20 flex items-center gap-1.5">
+          <i data-lucide="linkedin" class="w-3.5 h-3.5"></i>
+          <span>Contacto</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-16 md:pt-28 md:pb-24 overflow-hidden grid-bg">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-mono font-medium mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>Software & Backend Developer</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-8 space-y-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            Hola, soy <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">Juan Pablo</span>.
+            <br>Backend & Software Engineer
+          </h1>
+          
+          <p class="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed">
+            Estudiante de Ingeniería en Sistemas Computacionales enfocado en construir 
+            <span class="text-slate-200 font-semibold">arquitecturas escalables, sistemas seguros y APIs de alto rendimiento</span>. 
+            Especializado en el ecosistema <strong class="text-cyan-400">Java / Spring Boot</strong>, desarrollo de aplicaciones de escritorio y arquitectura en 
+            <strong class="text-purple-400">C# / .NET</strong> con integración de IA, y diseño de 
+            <strong class="text-amber-400">pipelines de automatización en Python</strong>.
+          </p>
+
+          <!-- Badges & Highlights -->
+          <div class="flex flex-wrap gap-2.5 pt-2 font-mono text-xs">
+            <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-cyan-400"></i> Spring Security & JWT
+            </span>
+            <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              <i data-lucide="layers" class="w-3.5 h-3.5 text-purple-400"></i> C# / .NET 10 (MVVM & WPF)
+            </span>
+            <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              <i data-lucide="bot" class="w-3.5 h-3.5 text-purple-300"></i> Ecosistema NeoIA
+            </span>
+            <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              <i data-lucide="video" class="w-3.5 h-3.5 text-rose-400"></i> AI Video & TTS Dubbing
+            </span>
+            <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              <i data-lucide="terminal" class="w-3.5 h-3.5 text-amber-400"></i> Python Automation & ETL
+            </span>
+            <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1.5">
+              <i data-lucide="database" class="w-3.5 h-3.5 text-blue-400"></i> PostgreSQL & Flyway
+            </span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#destacado" class="px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm transition-all flex items-center gap-2 shadow-lg shadow-cyan-500/20">
+              <i data-lucide="sparkles" class="w-4 h-4"></i> Proyecto ChurnInsight
+            </a>
+            <a href="#neoia" class="px-5 py-2.5 rounded-lg border border-purple-500/40 bg-purple-500/10 hover:bg-purple-500/20 text-purple-300 text-sm font-semibold transition-all flex items-center gap-2">
+              <i data-lucide="bot" class="w-4 h-4 text-purple-400"></i> Explorar NeoIA (C# & IA)
+            </a>
+            <a href="https://www.linkedin.com/in/juan-pablo-martinez-reyes-3aa977315/" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white text-sm transition-colors flex items-center gap-2">
+              <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i> LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Summary Box -->
+        <div class="lg:col-span-4">
+          <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 backdrop-blur-sm space-y-4">
+            <h3 class="text-xs uppercase tracking-wider font-mono text-cyan-400 font-semibold flex items-center gap-2">
+              <i data-lucide="code" class="w-4 h-4"></i> Snapshot Profesional
+            </h3>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <span>Contribución backend en Hackathon de Oracle con equipo multidisciplinario.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <span>Diseño y desarrollo de cliente de escritorio C# .NET 10 con MVVM, WebSockets y Unity 3D Bridge (NeoIA).</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <span>Especialista en autenticación stateless, control de acceso RBAC y persistencia con Flyway.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <span>Pipelines multimedia en Python con FFmpeg, Edge-TTS y sincronización temporal precisa.</span>
+              </li>
+            </ul>
+
+            <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400 font-mono">
+              <span>Status: <span class="text-emerald-400">Activo</span></span>
+              <span>Ubicación: México</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 1: PROYECTO ESTRELLA (ChurnInsight) -->
+  <section id="destacado" class="py-16 md:py-24 border-t border-slate-800/80 bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-mono font-semibold tracking-wider text-cyan-400 uppercase">Team Experience & Hackathon</span>
+          <h2 class="text-3xl font-extrabold text-white mt-1">Proyecto Estrella: ChurnInsight</h2>
+          <p class="text-slate-400 text-sm mt-1">Colaboración en equipo para Hackathon Oracle Next Education (ONE) / No Country</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="https://github.com/mmolinero12/churninsight-H12-25-L-Equipo-44" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-cyan-500/40 bg-cyan-500/15 text-cyan-300 hover:bg-cyan-500/25 text-sm font-semibold transition-all shadow-sm shadow-cyan-500/10">
+            <i data-lucide="github" class="w-4 h-4"></i> Ver Repositorio en GitHub
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Featured Card -->
+      <div class="rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900/90 via-slate-900/50 to-slate-950 p-6 sm:p-8 lg:p-10 relative overflow-hidden glow-cyan">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-7 space-y-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-400 text-xs font-mono font-semibold border border-cyan-500/20">
+                Hackathon Oracle
+              </span>
+              <span class="px-2.5 py-1 rounded bg-blue-500/10 text-blue-400 text-xs font-mono font-semibold border border-blue-500/20">
+                Machine Learning & Backend
+              </span>
+              <span class="px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 text-xs font-mono font-semibold border border-purple-500/20">
+                Role: Backend & Security Architect
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white">
+              Sistema Inteligente de Predicción de Deserción Bancaria
+            </h3>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Plataforma diseñada para entidades bancarias (basada en el caso BBVA) que predice con antelación el riesgo de abandono de clientes mediante modelos Random Forest. El sistema conecta una interfaz moderna en React, un backend robusto en Java y microservicios de Machine Learning desplegados en la nube.
+            </p>
+
+            <!-- Key Contributions -->
+            <div class="space-y-3 pt-2">
+              <h4 class="text-xs uppercase tracking-wider font-mono text-cyan-400 font-bold">
+                Mi Contribución Técnica Clave:
+              </h4>
+              <ul class="space-y-2.5 text-sm text-slate-300">
+                <li class="flex items-start gap-2.5">
+                  <div class="p-1 rounded bg-cyan-500/10 text-cyan-400 shrink-0 mt-0.5">
+                    <i data-lucide="shield" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Seguridad y Autenticación Stateless:</strong> Diseñé e implementé la arquitectura de seguridad con <strong>Spring Security 6 y tokens JWT</strong>, incluyendo filtros personalizados para intercepción y validación de cabeceras de autorización.
+                  </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <div class="p-1 rounded bg-cyan-500/10 text-cyan-400 shrink-0 mt-0.5">
+                    <i data-lucide="key" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Control de Acceso RBAC:</strong> Creación de roles jerárquicos (<code>ROLE_ADMIN</code>, <code>ROLE_DATA_SCIENTIST</code>, <code>ROLE_ANALYST</code>, <code>ROLE_USER</code>) inyectados en los claims del token para restringir endpoints analíticos y administrativos.
+                  </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <div class="p-1 rounded bg-cyan-500/10 text-cyan-400 shrink-0 mt-0.5">
+                    <i data-lucide="network" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">CORS & Conexión de Servicios:</strong> Configuración de políticas CORS granulares que permitieron la comunicación fluida con la aplicación web cliente (React) y los endpoints predictivos de FastAPI en Oracle Cloud.
+                  </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <div class="p-1 rounded bg-cyan-500/10 text-cyan-400 shrink-0 mt-0.5">
+                    <i data-lucide="check-square" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Testing & Calidad de Código:</strong> Cobertura de pruebas unitarias sobre servicios de autenticación y lógica de negocio utilizando <strong>JUnit 5 y Mockito</strong>.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tech Tags -->
+            <div class="pt-4 flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Java 17</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Spring Boot 3</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Spring Security</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">JWT & BCrypt</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">PostgreSQL</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Flyway</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">JUnit 5 / Mockito</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Postman</span>
+            </div>
+
+            <!-- Direct Project Links -->
+            <div class="pt-4 flex flex-wrap items-center gap-3">
+              <a href="https://github.com/mmolinero12/churninsight-H12-25-L-Equipo-44" target="_blank" rel="noopener noreferrer"
+                 class="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs font-mono transition-all flex items-center gap-2 shadow-md shadow-cyan-500/20">
+                <i data-lucide="github" class="w-3.5 h-3.5"></i> Repositorio ChurnInsight
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+              <a href="https://github.com/mmolinero12/churninsight-H12-25-L-Equipo-44/commits?author=Juan392" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-lg border border-slate-700 bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs font-mono transition-all flex items-center gap-1.5">
+                <i data-lucide="git-commit" class="w-3.5 h-3.5 text-cyan-400"></i> Mis Commits en ChurnInsight
+                <i data-lucide="arrow-up-right" class="w-3 h-3 text-slate-500"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Architecture & PR Proof Box -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="bg-slate-950/80 rounded-xl border border-slate-800 p-5 font-mono text-xs text-slate-400 space-y-3">
+              <div class="flex items-center justify-between text-slate-300 border-b border-slate-800 pb-2">
+                <span class="flex items-center gap-1.5 text-cyan-400 font-bold">
+                  <i data-lucide="git-pull-request" class="w-3.5 h-3.5"></i> Pull Requests Merged
+                </span>
+                <a href="https://github.com/mmolinero12/churninsight-H12-25-L-Equipo-44/pulls?q=is%3Apr+author%3AJuan392" target="_blank" class="text-slate-500 hover:text-cyan-400 text-[11px] flex items-center gap-1">
+                  ver todos <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </div>
+              <div class="space-y-2">
+                <a href="https://github.com/mmolinero12/churninsight-H12-25-L-Equipo-44/pull/2" target="_blank" rel="noopener noreferrer"
+                   class="block p-2.5 rounded bg-slate-900 border border-slate-800/80 hover:border-cyan-500/50 hover:bg-slate-850 transition-all group">
+                  <div class="text-slate-200 group-hover:text-cyan-300 font-semibold text-xs flex items-center justify-between">
+                    <span>PR #2: Seguridad & Módulo Auth</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-slate-500 group-hover:text-cyan-400"></i>
+                  </div>
+                  <div class="text-slate-500 text-[11px] mt-0.5">Spring Security, JWT TokenService, Usuario, Rol, Repositorios & Mappers.</div>
+                </a>
+                <a href="https://github.com/mmolinero12/churninsight-H12-25-L-Equipo-44/pull/3" target="_blank" rel="noopener noreferrer"
+                   class="block p-2.5 rounded bg-slate-900 border border-slate-800/80 hover:border-cyan-500/50 hover:bg-slate-850 transition-all group">
+                  <div class="text-slate-200 group-hover:text-cyan-300 font-semibold text-xs flex items-center justify-between">
+                    <span>PR #3: CORS & Claims de Roles</span>
+                    <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-slate-500 group-hover:text-cyan-400"></i>
+                  </div>
+                  <div class="text-slate-500 text-[11px] mt-0.5">Configuración CORS multiplataforma + inyección de roles en payload JWT.</div>
+                </a>
+                <div class="p-2.5 rounded bg-slate-900 border border-slate-800/80">
+                  <div class="text-slate-200 font-semibold text-xs">Tests con JUnit 5 & Mockito</div>
+                  <div class="text-slate-500 text-[11px] mt-0.5">Pruebas unitarias completas a la capa de servicios de autenticación.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Architecture Diagram Snippet -->
+            <div class="p-4 rounded-xl border border-slate-800/80 bg-slate-950/50">
+              <div class="text-xs font-mono text-slate-400 mb-2 flex items-center gap-2">
+                <i data-lucide="cpu" class="w-3.5 h-3.5 text-purple-400"></i> Flujo de Integración
+              </div>
+              <div class="space-y-1.5 text-xs font-mono text-slate-400">
+                <div class="flex items-center gap-2 text-slate-300">
+                  <span class="text-cyan-400">Frontend (React Client)</span> ➔ 
+                  <span class="text-emerald-400 font-semibold">Spring Boot (Auth & RBAC)</span>
+                </div>
+                <div class="pl-4 border-l-2 border-slate-800 text-[11px] text-slate-500">
+                  Valida JWT, Roles y Autorización
+                </div>
+                <div class="flex items-center gap-2 text-slate-300">
+                  <span class="text-emerald-400 font-semibold">Spring Boot</span> ➔ 
+                  <span class="text-purple-400">FastAPI ML (Random Forest BBVA)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: PROYECTO DESTACADO — NEOIA (C# .NET & ASISTENTE INTELIGENTE) -->
+  <section id="neoia" class="py-16 md:py-24 border-t border-slate-800/80 bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 text-xs font-mono font-semibold border border-purple-500/20 mb-2">
+            <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+            Arquitectura Avanzada C# & IA Multimodal
+          </div>
+          <h2 class="text-3xl font-extrabold text-white">Ecosistema NeoIA</h2>
+          <p class="text-slate-400 text-sm mt-1">Asistente Virtual Autónomo con Cliente de Escritorio C# .NET 10, Avatar 3D y Cerebro Multimodal</p>
+        </div>
+        <div class="text-xs font-mono text-slate-400 flex items-center gap-2">
+          <span class="px-2.5 py-1 rounded bg-purple-950/60 border border-purple-800/60 text-purple-300">.NET 10 WPF</span>
+          <span class="px-2.5 py-1 rounded bg-purple-950/60 border border-purple-800/60 text-purple-300">Android Compose MVI</span>
+          <span class="px-2.5 py-1 rounded bg-purple-950/60 border border-purple-800/60 text-purple-300">Gemini AI</span>
+        </div>
+      </div>
+
+      <!-- NeoIA Main Card -->
+      <div class="rounded-2xl border border-purple-500/30 bg-gradient-to-br from-slate-900/95 via-slate-900/60 to-slate-950 p-6 sm:p-8 lg:p-10 relative overflow-hidden glow-purple">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <div class="lg:col-span-7 space-y-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-1 rounded bg-purple-500/15 text-purple-400 text-xs font-mono font-semibold border border-purple-500/30">
+                C# .NET 10 & MVVM
+              </span>
+              <span class="px-2.5 py-1 rounded bg-amber-500/15 text-amber-300 text-xs font-mono font-semibold border border-amber-500/30 flex items-center gap-1">
+                <i data-lucide="store" class="w-3 h-3"></i> Lanzamiento en Tiendas Oficiales
+              </span>
+              <span class="px-2.5 py-1 rounded bg-indigo-500/15 text-indigo-400 text-xs font-mono font-semibold border border-indigo-500/30">
+                Unity 3D Bridge
+              </span>
+              <span class="px-2.5 py-1 rounded bg-cyan-500/15 text-cyan-400 text-xs font-mono font-semibold border border-cyan-500/30">
+                Baja Latencia WASAPI & WebSockets
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white">
+              Arquitectura Distribuida y Cliente de Escritorio de Alto Rendimiento
+            </h3>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              <strong>NeoIA</strong> es un ecosistema de asistencia inteligente interactiva que integra voz natural, sincronización de avatar tridimensional en tiempo real, visión artificial y procesamiento cognitivo mediante modelos avanzados de Google Gemini. Diseñado bajo principios rigurosos de desacoplamiento, inyección de dependencias y concurrencia.
+            </p>
+
+            <!-- Key Engineering Highlights in NeoIA -->
+            <div class="space-y-3 pt-2">
+              <h4 class="text-xs uppercase tracking-wider font-mono text-purple-400 font-bold">
+                Pilares de Implementación en C# / .NET & Ecosistema:
+              </h4>
+              <ul class="space-y-2.5 text-sm text-slate-300">
+                <li class="flex items-start gap-2.5">
+                  <div class="p-1 rounded bg-purple-500/10 text-purple-400 shrink-0 mt-0.5">
+                    <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Cliente de Escritorio en C# (.NET 10 / WPF):</strong> Implementado con patrón <strong>MVVM</strong> utilizando <code>CommunityToolkit.Mvvm</code> y contenedor de Inyección de Dependencias (DI). Gestión de modos completos (Chat Mode, Avatar Mode y Widget flotante).
+                  </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <div class="p-1 rounded bg-purple-500/10 text-purple-400 shrink-0 mt-0.5">
+                    <i data-lucide="radio" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">WebSockets Asíncronos & TCP Bridge:</strong> Comunicación bidireccional continua con el backend mediante <code>WebSocketService</code> (texto y payloads binarios), y canal TCP dedicado (<code>TcpAvatarClient</code>) para sincronizar emociones del avatar (<code>EMOTION</code>, <code>AUDIO</code>, <code>METADATA</code>) incrustado mediante Win32 P/Invoke.
+                  </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <div class="p-1 rounded bg-purple-500/10 text-purple-400 shrink-0 mt-0.5">
+                    <i data-lucide="mic" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Audio WASAPI & Visión GDI:</strong> Captura de micrófono de ultra baja latencia con <strong>WASAPI</strong> (16kHz PCM en streaming continuo) y módulo de captura de pantalla Win32 GDI con compresión JPEG en Base64 para análisis visual multimodal.
+                  </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <div class="p-1 rounded bg-purple-500/10 text-purple-400 shrink-0 mt-0.5">
+                    <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Móvil Android (Compose MVI):</strong> Arquitectura MVI con Jetpack Compose, pipeline de audio con supresión de ruido (NS), control automático de ganancia (AGC) y corrutinas reactivas con colas asíncronas.
+                  </div>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <div class="p-1 rounded bg-purple-500/10 text-purple-400 shrink-0 mt-0.5">
+                    <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <strong class="text-white">Testing Automatizado:</strong> Suite de pruebas unitarias implementadas en <strong>xUnit</strong> para validar servicios de red, persistencia local y ciclo de vida de conversaciones.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tech Tags -->
+            <div class="pt-3 flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">C# 12 / .NET 10</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">WPF & MVVM</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Dependency Injection</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">WebSockets & TCP</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">WASAPI Audio</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Win32 P/Invoke</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">xUnit</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs font-mono">Gemini AI</span>
+            </div>
+
+            <!-- Commercial / Distribution & Devlog Note -->
+            <div class="mt-4 p-4 rounded-xl border border-purple-500/30 bg-purple-950/25 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+              <div class="flex items-start gap-2.5 text-slate-300">
+                <div class="p-1.5 rounded-lg bg-purple-500/20 text-purple-300 shrink-0 mt-0.5 sm:mt-0">
+                  <i data-lucide="store" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <span class="font-semibold text-white">Disponibilidad & Devlogs:</span>
+                  <span class="text-slate-300"> El lanzamiento final estará disponible exclusivamente a través de <strong>tiendas oficiales de aplicaciones</strong>. Paralelamente, comparto contenido técnico, hitos de arquitectura y el proceso de creación detrás de su desarrollo.</span>
+                </div>
+              </div>
+              <span class="shrink-0 font-mono text-[11px] px-2.5 py-1 rounded bg-purple-500/15 border border-purple-500/30 text-purple-300 flex items-center gap-1.5 self-start sm:self-auto">
+                <i data-lucide="video" class="w-3 h-3 text-purple-400"></i> Proceso en Devlogs
+              </span>
+            </div>
+          </div>
+
+          <!-- Architecture & Component Breakdown -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="bg-slate-950/90 rounded-xl border border-slate-800 p-5 font-mono text-xs text-slate-400 space-y-3">
+              <div class="flex items-center justify-between text-slate-300 border-b border-slate-800 pb-2">
+                <span class="flex items-center gap-1.5 text-purple-400 font-bold">
+                  <i data-lucide="folder-tree" class="w-3.5 h-3.5"></i> Estructura del Cliente C#
+                </span>
+                <span class="text-slate-500">NeoIA-PC-Client</span>
+              </div>
+              <div class="space-y-2 text-[11px]">
+                <div class="p-2 rounded bg-slate-900 border border-slate-800/80">
+                  <div class="text-purple-300 font-semibold">Services / Network & Audio</div>
+                  <div class="text-slate-400 mt-0.5">IWebSocketService, ITcpAvatarClient, IAudioCaptureService (WASAPI 16kHz).</div>
+                </div>
+                <div class="p-2 rounded bg-slate-900 border border-slate-800/80">
+                  <div class="text-purple-300 font-semibold">ViewModels & UI Binding</div>
+                  <div class="text-slate-400 mt-0.5">MainViewModel con CommunityToolkit.Mvvm para desacoplamiento total.</div>
+                </div>
+                <div class="p-2 rounded bg-slate-900 border border-slate-800/80">
+                  <div class="text-purple-300 font-semibold">P/Invoke Native Embedding</div>
+                  <div class="text-slate-400 mt-0.5">WindowsFormsHost para incrustar el renderizado 3D de Unity a 60 FPS.</div>
+                </div>
+                <div class="p-2 rounded bg-slate-900 border border-slate-800/80">
+                  <div class="text-purple-300 font-semibold">NeoIA-PC-Client.Tests</div>
+                  <div class="text-slate-400 mt-0.5">Tests unitarios automatizados con xUnit para servicios críticos y storage.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interoperability Schema -->
+            <div class="p-4 rounded-xl border border-slate-800/80 bg-slate-950/60 font-mono text-xs space-y-2">
+              <div class="text-slate-400 flex items-center gap-2">
+                <i data-lucide="network" class="w-3.5 h-3.5 text-cyan-400"></i> Diagrama de Flujo en Tiempo Real
+              </div>
+              <div class="text-[11px] space-y-1.5 text-slate-300 pt-1">
+                <div class="flex items-center justify-between bg-slate-900 p-1.5 rounded border border-slate-800/60">
+                  <span class="text-purple-400">WASAPI Mic Input</span>
+                  <span class="text-slate-500">➔</span>
+                  <span class="text-cyan-400">PCM 16kHz</span>
+                  <span class="text-slate-500">➔</span>
+                  <span class="text-emerald-400">WebSocket</span>
+                </div>
+                <div class="flex items-center justify-between bg-slate-900 p-1.5 rounded border border-slate-800/60">
+                  <span class="text-emerald-400">Gemini LLM Brain</span>
+                  <span class="text-slate-500">➔</span>
+                  <span class="text-purple-400">TCP Stream</span>
+                  <span class="text-slate-500">➔</span>
+                  <span class="text-indigo-400">Unity 3D Lip-Sync</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: AUTOMATIZACIONES MULTIMEDIA & SCRIPTING (Python) -->
+  <section id="automatizaciones" class="py-16 md:py-24 border-t border-slate-800/80 bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-mono font-semibold border border-amber-500/20 mb-2">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+            Automatización & Ingeniería de Datos
+          </div>
+          <h2 class="text-3xl font-extrabold text-white">Pipelines & Scripts en Python</h2>
+          <p class="text-slate-400 text-sm mt-1">Soluciones automatizadas para flujos de trabajo multimedia, síntesis neuronal y extracción de datos</p>
+        </div>
+        <div class="text-xs font-mono text-slate-500 flex items-center gap-1.5">
+          <i data-lucide="terminal" class="w-4 h-4 text-amber-400"></i> Python 3.12 Ecosystem
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- CARD 1: PYTHON AI VIDEO DUBBING & RENDERING -->
+        <div class="rounded-2xl border border-rose-500/30 bg-slate-900/60 p-6 sm:p-8 flex flex-col justify-between glow-rose relative overflow-hidden group">
+          <div class="absolute -top-12 -right-12 w-40 h-40 bg-rose-500/10 rounded-full blur-2xl group-hover:bg-rose-500/20 transition-all"></div>
+          
+          <div class="space-y-4 relative">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-rose-500/15 text-rose-400 text-xs font-mono font-semibold border border-rose-500/30 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
+                Automatización Multimedia
+              </span>
+              <span class="text-xs font-mono text-slate-500">Python & FFmpeg</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-white group-hover:text-rose-300 transition-colors">
+              Pipeline de Doblaje por Voz con IA & Renderizado Automático de Videos
+            </h3>
+
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Orquestador automatizado para traducción y doblaje de videos (YouTube / Shorts / Douyin). Sintetiza voces neuronales sincronizadas al milisegundo y renderiza el video final listo para distribución.
+            </p>
+
+            <div class="space-y-2 pt-2 text-xs text-slate-300">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+                <span><strong>TTS Neuronal Concurrente:</strong> Síntesis con <code>Edge-TTS</code> y descargas paralelas asíncronas con <code>asyncio.Semaphore(5)</code> para alta velocidad sin bloqueos.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+                <span><strong>Time-Stretching & Sincronía:</strong> Ajuste automático de velocidad con <code>pydub.effects.speedup</code> (atempo) calculado sobre marcas de tiempo de subtítulos <code>pysrt</code>.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+                <span><strong>Renderizado Multi-Formato:</strong> Multiplexación con <code>FFmpeg</code> para videos horizontales y Shorts verticales con banda sonora temática (comedia vs. suspenso).</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="px-2 py-0.5 rounded bg-rose-950/60 border border-rose-800/50 text-rose-300 text-xs font-mono">Python 3</span>
+              <span class="px-2 py-0.5 rounded bg-rose-950/60 border border-rose-800/50 text-rose-300 text-xs font-mono">FFmpeg</span>
+              <span class="px-2 py-0.5 rounded bg-rose-950/60 border border-rose-800/50 text-rose-300 text-xs font-mono">Edge-TTS</span>
+              <span class="px-2 py-0.5 rounded bg-rose-950/60 border border-rose-800/50 text-rose-300 text-xs font-mono">Asyncio</span>
+              <span class="px-2 py-0.5 rounded bg-rose-950/60 border border-rose-800/50 text-rose-300 text-xs font-mono">Pydub & PySRT</span>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-xs font-mono text-slate-400 flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-rose-400"></i>
+              Pipeline productivo local
+            </span>
+            <span class="text-xs font-mono text-rose-400 font-semibold px-2 py-1 rounded bg-rose-500/10 border border-rose-500/20">
+              Listo para GitHub
+            </span>
+          </div>
+        </div>
+
+        <!-- CARD 2: PYTHON AUTOMATION & SCRAPING SUITE -->
+        <div class="rounded-2xl border border-amber-500/30 bg-slate-900/60 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute -top-12 -right-12 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/20 transition-all"></div>
+          
+          <div class="space-y-4 relative">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-amber-500/15 text-amber-400 text-xs font-mono font-semibold border border-amber-500/30 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                Automatización & ETL
+              </span>
+              <span class="text-xs font-mono text-slate-500">Python 3.12</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-white group-hover:text-amber-300 transition-colors">
+              Suite de Automatización, ETL & Web Scraping
+            </h3>
+
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Colección modular de scripts en Python diseñados para optimizar flujos de trabajo sistemáticos, extracción de datos desde fuentes web y procesamiento de archivos a gran escala.
+            </p>
+
+            <div class="space-y-2 pt-2 text-xs text-slate-300">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span><strong>Web Scraping Robusto:</strong> Extracción de datos dinámicos mediante <code>Playwright</code> y <code>BeautifulSoup</code> con gestión de sesiones.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span><strong>Pipeline ETL & Limpieza:</strong> Transformación y normalización de datasets tabulares con <code>Pandas</code> y persistencia relacional.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span><strong>CLI & Automatizaciones:</strong> Scripts utilitarios para renombrado masivo, generación de reportes y clientes REST.</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="px-2 py-0.5 rounded bg-amber-950/60 border border-amber-800/50 text-amber-300 text-xs font-mono">Python 3</span>
+              <span class="px-2 py-0.5 rounded bg-amber-950/60 border border-amber-800/50 text-amber-300 text-xs font-mono">Pandas</span>
+              <span class="px-2 py-0.5 rounded bg-amber-950/60 border border-amber-800/50 text-amber-300 text-xs font-mono">Playwright</span>
+              <span class="px-2 py-0.5 rounded bg-amber-950/60 border border-amber-800/50 text-amber-300 text-xs font-mono">BeautifulSoup</span>
+              <span class="px-2 py-0.5 rounded bg-amber-950/60 border border-amber-800/50 text-amber-300 text-xs font-mono">Requests</span>
+            </div>
+          </div>
+
+          <div class="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-xs font-mono text-slate-400 flex items-center gap-1.5">
+              <i data-lucide="package" class="w-3.5 h-3.5 text-amber-400"></i>
+              Empaquetando en repositorio
+            </span>
+            <span class="text-xs font-mono text-amber-400 font-semibold px-2 py-1 rounded bg-amber-500/10 border border-amber-500/20">
+              Fase de documentación
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4: PROYECTOS BACKEND COMPLETADOS (Java & Spring Boot) -->
+  <section id="proyectos" class="py-16 md:py-24 border-t border-slate-800/80 bg-slate-900/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-12">
+        <span class="text-xs font-mono font-semibold tracking-wider text-cyan-400 uppercase">Proyectos Personales</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">APIs & Arquitectura Backend en Java</h2>
+        <p class="text-slate-400 text-sm mt-1">Implementaciones con Spring Boot, patrones de persistencia y consumo de APIs</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- PROYECTO 1: FOROHUB -->
+        <div class="rounded-xl border border-slate-800 bg-slate-900/40 p-6 flex flex-col justify-between hover:border-slate-700 transition-all group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Java / Spring</span>
+              <a href="https://github.com/Juan392/foroHub" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
+              ForoHub — API REST
+            </h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              API REST completa para un foro de discusión con registro de tópicos, respuestas, usuarios, autenticación segura con JWT y control de borrado lógico.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2 text-[11px] font-mono text-slate-300">
+              <span class="px-2 py-0.5 bg-slate-800 rounded">Spring Boot</span>
+              <span class="px-2 py-0.5 bg-slate-800 rounded">Security</span>
+              <span class="px-2 py-0.5 bg-slate-800 rounded">JPA</span>
+              <span class="px-2 py-0.5 bg-slate-800 rounded">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-800/80">
+            <a href="https://github.com/Juan392/foroHub" target="_blank" class="text-xs font-mono text-cyan-400 hover:underline flex items-center gap-1">
+              Ver código en GitHub <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROYECTO 2: VOLL MED API -->
+        <div class="rounded-xl border border-slate-800 bg-slate-900/40 p-6 flex flex-col justify-between hover:border-slate-700 transition-all group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">Java / Spring</span>
+              <a href="https://github.com/Juan392/APIREST-volmed" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">
+              Voll Med — Gestión Médica
+            </h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Sistema de gestión para clínicas médicas: registro de médicos, pacientes, agendamiento de consultas, validaciones de negocio complejas y migraciones con Flyway.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2 text-[11px] font-mono text-slate-300">
+              <span class="px-2 py-0.5 bg-slate-800 rounded">Spring Boot</span>
+              <span class="px-2 py-0.5 bg-slate-800 rounded">Flyway</span>
+              <span class="px-2 py-0.5 bg-slate-800 rounded">PostgreSQL</span>
+              <span class="px-2 py-0.5 bg-slate-800 rounded">DTOs</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-800/80">
+            <a href="https://github.com/Juan392/APIREST-volmed" target="_blank" class="text-xs font-mono text-blue-400 hover:underline flex items-center gap-1">
+              Ver código en GitHub <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROYECTO 3: LITERALURA -->
+        <div class="rounded-xl border border-slate-800 bg-slate-900/40 p-6 flex flex-col justify-between hover:border-slate-700 transition-all group">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Java / Gutendex</span>
+              <a href="https://github.com/Juan392/literalura" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
+              LiterAlura — Catálogo de Libros
+            </h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              Aplicación interactiva con persistencia en base de datos. Consume la API Gutendex, procesa respuestas JSON, almacena autores/libros y calcula métricas estadísticas.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2 text-[11px] font-mono text-slate-300">
+              <span class="px-2 py-0.5 bg-slate-800 rounded">Java 17</span>
+              <span class="px-2 py-0.5 bg-slate-800 rounded">Spring Data JPA</span>
+              <span class="px-2 py-0.5 bg-slate-800 rounded">Jackson</span>
+              <span class="px-2 py-0.5 bg-slate-800 rounded">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-800/80">
+            <a href="https://github.com/Juan392/literalura" target="_blank" class="text-xs font-mono text-emerald-400 hover:underline flex items-center gap-1">
+              Ver código en GitHub <i data-lucide="arrow-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 5: STACK TÉCNICO COMPLETO -->
+  <section id="habilidades" class="py-16 md:py-24 border-t border-slate-800/80 bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-mono font-semibold tracking-wider text-cyan-400 uppercase">Habilidades & Herramientas</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Stack Tecnológico</h2>
+        <p class="text-slate-400 text-sm mt-2">Tecnologías y herramientas que utilizo para resolver problemas de ingeniería de software</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Categoría 1: Backend Java & .NET -->
+        <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+            <i data-lucide="server" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-white text-base">Backend & C# .NET</h3>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400"></i> Java 17 & 21</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400"></i> Spring Boot & Spring Data</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-cyan-400"></i> Spring Security & JWT</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-purple-400"></i> C# 12 & .NET 10 (WPF)</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-purple-400"></i> MVVM & Dependency Injection</li>
+          </ul>
+        </div>
+
+        <!-- Categoría 2: Scripting & Multimedia -->
+        <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+            <i data-lucide="terminal" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-white text-base">Python & Multimedia</h3>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-400"></i> Python 3.12 & Asyncio</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-rose-400"></i> FFmpeg & Video Rendering</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-rose-400"></i> Edge-TTS & Pydub Audio Sync</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-400"></i> Web Scraping (Playwright/BS4)</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-amber-400"></i> Pandas (ETL & Clean Data)</li>
+          </ul>
+        </div>
+
+        <!-- Categoría 3: Bases de Datos -->
+        <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+            <i data-lucide="database" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-white text-base">Bases de Datos & SQL</h3>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400"></i> PostgreSQL</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400"></i> SQL Server</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400"></i> MySQL</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400"></i> Flyway (Database Migrations)</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-blue-400"></i> Modelado Relacional & Consultas</li>
+          </ul>
+        </div>
+
+        <!-- Categoría 4: Herramientas & Testing -->
+        <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 space-y-4">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+            <i data-lucide="wrench" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-bold text-white text-base">Testing & Herramientas</h3>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-emerald-400"></i> JUnit 5 & Mockito</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-purple-400"></i> xUnit (.NET Testing)</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-emerald-400"></i> Postman / Insomnia</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-emerald-400"></i> Git & GitHub Workflows</li>
+            <li class="flex items-center gap-2"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-emerald-400"></i> Docker & Maven</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 6: SOBRE MÍ & EDUCACIÓN -->
+  <section class="py-16 md:py-24 border-t border-slate-800/80 bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-5">
+          <span class="text-xs font-mono font-semibold tracking-wider text-cyan-400 uppercase">Trayectoria & Enfoque</span>
+          <h2 class="text-3xl font-extrabold text-white">Ingeniería, Metodología y Buenas Prácticas</h2>
+          
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Como estudiante de <strong>Ingeniería en Sistemas Computacionales</strong>, combino fundamentos sólidos de ciencias de la computación (algoritmos, estructuras de datos, diseño de software) con herramientas y arquitecturas modernas de desarrollo de software.
+          </p>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Mi experiencia trabajando en equipos multidisciplinarios durante hackathons y en proyectos de sistemas distribuidos me ha enseñado el valor de escribir código legible, documentado, con pruebas automatizadas y un estricto control de versiones mediante ramas y pull requests descriptivos.
+          </p>
+
+          <div class="flex items-center gap-4 pt-2">
+            <div class="p-3 rounded-xl border border-slate-800 bg-slate-900/60 flex items-center gap-3">
+              <i data-lucide="graduation-cap" class="w-6 h-6 text-cyan-400"></i>
+              <div>
+                <div class="text-xs text-slate-400 font-mono">Formación Académica</div>
+                <div class="text-sm font-bold text-white">Ingeniería en Sistemas Computacionales</div>
+              </div>
+            </div>
+            <div class="p-3 rounded-xl border border-slate-800 bg-slate-900/60 flex items-center gap-3">
+              <i data-lucide="award" class="w-6 h-6 text-emerald-400"></i>
+              <div>
+                <div class="text-xs text-slate-400 font-mono">Especialización</div>
+                <div class="text-sm font-bold text-white">Oracle Next Education (ONE)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 space-y-4">
+            <h3 class="text-sm font-mono text-cyan-400 font-semibold uppercase tracking-wider">Principios de Trabajo</h3>
+            
+            <div class="space-y-3">
+              <div class="p-3.5 rounded-xl border border-slate-800/80 bg-slate-950 flex items-start gap-3">
+                <i data-lucide="shield" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                <div class="text-xs text-slate-300">
+                  <strong class="text-white">Security-First:</strong> Autenticación, cifrado de contraseñas y permisos granulares desde el diseño inicial de la API.
+                </div>
+              </div>
+              <div class="p-3.5 rounded-xl border border-slate-800/80 bg-slate-950 flex items-start gap-3">
+                <i data-lucide="git-commit" class="w-4 h-4 text-purple-400 shrink-0 mt-0.5"></i>
+                <div class="text-xs text-slate-300">
+                  <strong class="text-white">Git Conventions:</strong> Commits atómicos, Pull Requests organizados y documentación clara del flujo de trabajo.
+                </div>
+              </div>
+              <div class="p-3.5 rounded-xl border border-slate-800/80 bg-slate-950 flex items-start gap-3">
+                <i data-lucide="test-tube" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                <div class="text-xs text-slate-300">
+                  <strong class="text-white">Test-Driven Mindset:</strong> Verificación de reglas de negocio críticas con tests unitarios y suites de simulación.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN 7: CONTACTO (Sin exposición de email) -->
+  <section id="contacto" class="py-16 md:py-24 border-t border-slate-800/80 bg-slate-950 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+      
+      <div class="space-y-3">
+        <span class="text-xs font-mono font-semibold tracking-wider text-cyan-400 uppercase">Colaboraciones & Proyectos</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Conectemos</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">
+          Siempre con disposición para colaborar en proyectos de ingeniería de software, arquitecturas backend (Java / .NET / Python) e iniciativas tecnológicas de impacto.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <!-- LinkedIn Primary -->
+        <a href="https://www.linkedin.com/in/juan-pablo-martinez-reyes-3aa977315/" target="_blank" rel="noopener noreferrer"
+           class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 text-sm font-bold transition-all flex items-center gap-2.5 hover:brightness-110 shadow-lg shadow-cyan-500/25">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span>Conectar en LinkedIn</span>
+          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/Juan392" target="_blank" rel="noopener noreferrer"
+           class="px-6 py-3.5 rounded-xl border border-slate-800 bg-slate-900/80 hover:border-slate-700 text-slate-200 text-sm font-semibold transition-all flex items-center gap-2.5">
+          <i data-lucide="github" class="w-4 h-4 text-cyan-400"></i>
+          <span>github.com/Juan392</span>
+        </a>
+      </div>
+
+      <div class="text-xs font-mono text-slate-500 pt-2">
+        🔒 Comunicación profesional directa a través de LinkedIn y repositorios en GitHub.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-slate-800/80 bg-slate-950 text-slate-500 text-xs font-mono">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 Juan Pablo Martínez Reyes (Juan392) — Desarrollado con HTML5, Tailwind CSS y Lucide Icons.
+      </div>
+      <div class="flex items-center gap-4 text-slate-400">
+        <a href="#destacado" class="hover:text-cyan-400">Volver arriba</a>
+        <span>•</span>
+        <a href="https://github.com/Juan392" target="_blank" class="hover:text-cyan-400">GitHub</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/juan-pablo-martinez-reyes-3aa977315/" target="_blank" class="hover:text-cyan-400">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
